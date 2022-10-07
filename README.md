@@ -32,6 +32,7 @@
 
 - Algumas dificuldades foram encontradas neste projeto na parte do framework Spark, em sua maior parte na parte de configuração de ambiente para aceitar conexões com o PostgreSQL. Outra dificuldade foi a automatização da criação do banco de dados via Docker.
   - Estes dificuldades apresentadas foram todas resolvidas no decorrer do desenvolvimento deste projeto.
+- Houve uma dificuldade na realização dos testes unitários, sendo assim não foi possível criar todos os testes unitários desejados.
 
 ## Considerações
 
