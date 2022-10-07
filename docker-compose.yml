@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  postgres_db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: SiCooperative2022
+      POSTGRES_DB: sicooperative
+      POSTGRES_USER: sicooperative
+    ports:
+      - 5433:5432
+    networks:
+      - app-tier
+    volumes:
+      - ./postgres:/docker-entrypoint-initdb.d
+      - ./01-sicooperative.sql:/docker-entrypoint-initdb.d/01-sicooperative.sql
+
+networks:
+  app-tier:
+    driver: bridge
