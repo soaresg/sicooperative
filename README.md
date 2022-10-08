@@ -15,6 +15,15 @@
   ```
   python3 sicooperative/dataInsertion.py
   ```
+  
+o arquivo dataInsertion.py cria uma instancia do package Faker, que é responsável por gerar dados fictícios para a população dos dados, após isto é executado quatro funções que são responsáveis por criar os dados, sendo eles:
+  - populateAssociado(fake, quantity): função possui dois parâmetros, o primeiro é a instância do Faker para poder gerar nomes, sobrenomes, e-mails e idades fictícias, e a segunda é a quantidade de dados, ou seja linhas, que deve inserir na tabela associado.
+  
+  - populateConta(): função responsável por buscar a lista de associados e criar uma conta para cada um deles.
+  
+  - populateCartao(): função possui dois parâmetros, o primeiro é a instância do Faker para poder gerar números de cartões fictícios, e a segunda é a quantidade de cartões que será associado a uma conta e associado.
+  
+  - populateMovimento(): função possui dois parâmetros, o primeiro é a instância do Faker para poder gerar uma string aleatório para uma descrição da transação, e a segunda é a quantidade de movimentos que cada cartão terá associada a ele.
 
 ## ETL de dados
 
